@@ -1,0 +1,32 @@
+FROM ubuntu:16.04
+
+VOLUME /data
+
+# ENV TERM=xterm
+
+# These are required by python packages or for general happiness
+RUN apt-get update
+RUN apt-get install -y vim
+RUN apt-get install -y tmux
+RUN apt-get install -y screen
+RUN apt-get install -y git
+RUN apt-get install -y python-pip
+#RUN pkg-config \
+#    libfreetype6-dev \
+#    liblapack-dev \
+#    gfortran \
+#    htop \
+#    vim \
+#    dnsutils \
+#    screen \
+#    tmux \
+#    git \
+#    curl \
+#    libsnappy-dev
+
+# python packages
+# install numpy before anything to ensure the desired version is used
+RUN pip install --upgrade pip
+RUN pip install numpy==1.11
+
+ENTRYPOINT ["/bin/bash"]
