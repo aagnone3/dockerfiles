@@ -1,0 +1,41 @@
+FROM ubuntu:16.04
+
+VOLUME /data
+WORKDIR /data
+
+RUN apt update && apt install -y \
+    vim \
+    vim-common \
+    curl \
+    nmap \
+    wget \
+    git \
+    lsof \
+    python-pip \
+    python-dev \
+    tmux \
+    jq \
+    xclip \
+    tree \
+    rsync \
+    perl \
+    sed \
+    time \
+    tree \
+    lsb-base \
+    lsb-release \
+    software-properties-common \
+    graphviz
+
+RUN apt install -y \
+    libboost-all-dev
+
+# RUN add-apt-repository ppa:ubuntu-toolchain-r/test
+RUN apt update
+RUN apt install -y g++-4.9
+
+# python packages
+RUN pip install --upgrade pip
+RUN pip install pybind11
+
+ENTRYPOINT ["/bin/bash"]
