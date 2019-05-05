@@ -1,4 +1,4 @@
 DOCKER_REPO=bay-area
 JUPYTER_PORT=8890
-CORPORA_DIR=/imedia/${USER}/wd/corpora
+CORPORA_DIR=/media/aagnone/wd/corpora
 DOCKER_USERNAME=aagnone
