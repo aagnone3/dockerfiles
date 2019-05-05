@@ -1,11 +1,5 @@
-# include the environment file
-ifeq ("$(wildcard ./env)", "./env")
-	ENV_FILE := ./env
-else
-	ENV_FILE := ../env
-endif
-
-include ${ENV_FILE}
+# include some environment variables
+include ../env
 
 # use the name of the current directory as the docker image tag
 DOCKERFILE ?= Dockerfile
