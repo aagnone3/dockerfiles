@@ -1,0 +1,5 @@
+pandas
+PyYAML
+tqdm
+torchvision
+librosa

@@ -1,0 +1,12 @@
+torch
+torchvision
+pandas
+matplotlib
+seaborn
+statsmodels
+tensorflow-gpu
+keras
+jupyterlab
+pymc3
+pyro-ppl
+pystan

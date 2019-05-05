@@ -1,0 +1,4 @@
+DOCKER_REPO=bay-area
+JUPYTER_PORT=8890
+CORPORA_DIR=/imedia/${USER}/wd/corpora
+DOCKER_USERNAME=aagnone
