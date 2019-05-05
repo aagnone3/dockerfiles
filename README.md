@@ -1,7 +1,7 @@
 <img src=etc/docker.png width=705 height=369 />
 
 # dockerfiles
-A collection of useful Dockerfile definitions for various purposes
+A collection of useful Dockerfile definitions for various computational endeavors.
 
 ## Prerequisites
 - Install [Docker](https://docs.docker.com/install)
