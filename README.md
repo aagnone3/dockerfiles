@@ -1,3 +1,5 @@
+<img src=etc/docker.png width=705 height=369 />
+
 # dockerfiles
 A collection of useful Dockerfile definitions for various purposes
 
