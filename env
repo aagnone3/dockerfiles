@@ -1,4 +1,10 @@
-DOCKER_REPO=bay-area
+# port to open for your Docker container for Jupyter purposes
 JUPYTER_PORT=8890
+
+# directory to cross-mount, which contains data sets
 CORPORA_DIR=/media/aagnone/wd/corpora
+
+# (for Docker Hub purposes only)
+# Docker username and Hub repository name
 DOCKER_USERNAME=aagnone
+DOCKER_REPO=bay-area
