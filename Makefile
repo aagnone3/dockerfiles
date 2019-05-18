@@ -8,12 +8,13 @@ DOCKER_IMAGE = ${DOCKER_USERNAME}/${DOCKER_REPO}:${DOCKER_TAG}
 
 .PHONY: help
 help:
-	@echo "help:   show this help message"
-	@echo "login:  login to Docker"
-	@echo "image:  build the Docker image"
-	@echo "push:   push the Docker image to Docker hub"
-	@echo "run:    run the Docker container"
-	@echo "jup:    launch a jupyter-lab instance in the Docker container"
+	@echo "Makefile help for Docker image '${DOCKER_TAG}'"
+	@echo "    help:   show this help message"
+	@echo "    login:  login to Docker"
+	@echo "    image:  build the Docker image"
+	@echo "    push:   push the Docker image to ${DOCKER_IMAGE}"
+	@echo "    run:    run the Docker container"
+	@echo "    jup:    launch a jupyter-lab instance in the Docker container"
 
 .PHONY: login
 login:
