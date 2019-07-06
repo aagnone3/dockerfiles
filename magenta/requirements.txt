@@ -1,6 +1,4 @@
 jupyterlab
-torch
-torch-vision
 seaborn
 scikit-learn
 matplotlib
