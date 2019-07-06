@@ -20,12 +20,14 @@ help:
 login:
 	docker login
 
-.PHONY: image
-image:
+$(DOCKERFILE): requirements.txt
 	docker build \
 		-t ${DOCKER_IMAGE} \
 		-f ${DOCKERFILE} \
 		.
+	
+.PHONY: image
+image: $(DOCKERFILE)
 
 .PHONY: push
 push: login image
