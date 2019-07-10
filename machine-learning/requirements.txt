@@ -7,6 +7,5 @@ statsmodels
 tensorflow-gpu
 keras
 jupyterlab
-pymc3
 pyro-ppl
 pystan
