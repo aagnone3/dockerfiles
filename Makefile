@@ -1,3 +1,10 @@
+# guard against invocation from base directory
+ifneq "$(wildcard ../env)" ""
+EXISTS := "yes"
+else
+$(error Makefile should be invoked only from sub-directories)
+endif
+
 # include some environment variables
 include ../env
 
